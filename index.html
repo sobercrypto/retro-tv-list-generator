@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Retro TV List Generator</title>
+  <title>Retro TV Generator</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="tv-screen">
+
+  <!-- A container for the entire page; background can be just black or subtle noise -->
+  <div class="page-background">
+
     <h1>Retro "Top Ten" Generator</h1>
-    
     <form id="inputForm">
       <label for="userText">Enter your top ten items (one per line):</label><br/>
       <textarea id="userText" name="userText" rows="10" cols="40"></textarea><br/>
       <button type="submit">Show Me the List</button>
     </form>
-    
-    <!-- This is where the “TV style” text will appear -->
-    <div id="displayArea"></div>
+
+    <!-- The TV “frame” -->
+    <div class="tv-container">
+      <!-- The actual TV frame image -->
+      <img src="retro_tv_frame.png" alt="Retro TV Frame" class="tv-frame">
+      
+      <!-- The “screen” area behind the TV frame, where text is displayed -->
+      <div class="tv-screen" id="displayArea"> 
+        <!-- The JavaScript will insert text here -->
+      </div>
+    </div>
+
   </div>
 
   <script src="script.js"></script>
