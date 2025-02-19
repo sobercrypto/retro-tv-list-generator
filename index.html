@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Retro TV List Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="tv-screen">
+    <h1>Retro "Top Ten" Generator</h1>
+    
+    <form id="inputForm">
+      <label for="userText">Enter your top ten items (one per line):</label><br/>
+      <textarea id="userText" name="userText" rows="10" cols="40"></textarea><br/>
+      <button type="submit">Show Me the List</button>
+    </form>
+    
+    <!-- This is where the “TV style” text will appear -->
+    <div id="displayArea"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
